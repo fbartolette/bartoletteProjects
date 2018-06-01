@@ -1,17 +1,22 @@
 package tests;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
+
+import utils.driverSetup;
 
 class simpleTest {
 
+	private WebDriver driver;
+	
 	@BeforeEach
 	void setUp() throws Exception {
-		//TODO
-		//ADICIONANDO UMA LINHA
+
+		driverSetup setup = new driverSetup();
+		driver = setup.setupChromeDriver();
+		
 	}
 
 	@AfterEach
@@ -21,7 +26,7 @@ class simpleTest {
 
 	@Test
 	void test() {
-		//TODO
+		driver.get("www.google.com");
 	}
 
 }
