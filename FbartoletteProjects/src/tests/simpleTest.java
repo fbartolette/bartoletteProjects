@@ -11,6 +11,7 @@ class simpleTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		//TODO
+		//ADICIONANDO UMA LINHA
 	}
 
 	@AfterEach
