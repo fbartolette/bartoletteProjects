@@ -21,12 +21,12 @@ class simpleTest {
 
 	@AfterEach
 	void tearDown() throws Exception {
-		//TODO
+		driver.close();
 	}
 
 	@Test
 	void test() {
-		driver.get("www.google.com");
+		driver.get("https://www.google.com");
 	}
 
 }
